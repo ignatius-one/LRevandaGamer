@@ -8,7 +8,7 @@
     cursor: url('media/mano.png'), auto;
 }
 :root{
---redcolor:rgba(200,31,31);
+--redcolor:rgb(12, 218, 149);
 --bluecolor:rgb(0,19,255);
 --whitecolor:rgb(255, 255, 255);
 --blacklatter:rgb(33, 33, 33);
