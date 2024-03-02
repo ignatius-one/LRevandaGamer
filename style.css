@@ -400,6 +400,9 @@ font-family: var(--gamefont);
     *{
         font-size: 12px;
     }
+    .main-principal{
+        background-attachment: scroll;
+    }
     .section2 p{
         display: none;
     }
