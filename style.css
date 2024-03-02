@@ -1,0 +1,392 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Press Start 2P', system-ui; */
+    cursor: url('media/mano.png'), auto;
+}
+:root{
+--redcolor:rgba(200,31,31);
+--bluecolor:rgb(0,19,255);
+--whitecolor:rgb(255, 255, 255);
+--blacklatter:rgb(33, 33, 33);
+--gamefont:'Press Start 2P';
+
+}
+@font-face {
+    font-family: 'gamer';
+    src: url('media/Gamer.ttf');
+}
+body{
+    /* cursor: url('media/mano.png'), auto; */
+}
+
+.main-principal{
+   /* position: relative; */
+   padding-top: 5rem;
+   width: 100%;
+   height: 100vh;
+    /* padding-bottom: 180px; */
+   /* background-color:var(--redcolor) ; */
+   background-image: url('media/landscpae.jpg');
+   background-position: center;
+   background-size: cover;
+}
+.main-principal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con una opacidad del 50% */
+    z-index: 1; 
+} 
+
+
+header{
+    /* position: relative; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4.375rem; /* Altura fija del menú */
+    z-index: 1000;
+    flex-direction: row;
+    position: fixed;
+    display: flex;
+    background-color:var(--redcolor);
+    justify-content: space-between;
+}
+.fa-solid{
+    color: var(--whitecolor);
+    font-size: 2rem;
+    align-self: center;
+    display: none;
+    padding: .3125rem;
+}
+
+.logo{
+    color: var(--whitecolor);
+    padding: .3125rem;
+    
+}
+.menu-header {
+    /* background-image: url('pattern\ 3.svg');
+    background-size: contain; */
+    background-color: var(--redcolor);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .625rem 0;
+ }
+  
+  .menu-header a {
+    text-decoration: none;
+    color: #fff; /* Color de letra blanco */
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', cursive; /* Tipografía estilo videojuego */
+    text-transform: uppercase; /* Texto en mayúsculas estilo retro */
+    letter-spacing: .125rem; /* Espaciado entre letras estilo retro */
+    padding: .625rem 1.25rem; /* Espaciado interior */
+    transition: all 0.3s ease; /* Transición suave al pasar el cursor */
+  }
+  
+  .menu-header a:hover {
+    color: #ff0; /* Cambiar color al pasar el cursor estilo retro */
+  }
+  
+section{
+    width: 100%;
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+section .section-mein{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}
+.section1{
+    /* margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+   
+}
+.section1 .Title1{
+    font-family: 'Press Start 2P', system-ui;
+
+}
+.img_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .625rem;
+}
+.img_section .img1{
+    width: 20%;
+    transition: 300ms;
+}
+.img_section .img1:hover{
+    transform: scale(1.2);
+}
+.img_section .img2{
+    width: 20%;
+    transition: 300ms;
+}
+.img_section .img2:hover{
+    transform: scale(1.2);
+}
+.section1 .Title1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--whitecolor);
+}
+.section2{
+    color: var(--whitecolor);
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+}
+.section2 p{
+    margin-bottom: 1.8rem;
+}
+.section2 .Button{
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #FFA500; /* Color naranja brillante */
+    border: .125rem solid #000; /* Borde negro */
+    font-family: 'Press Start 2P', cursive; /* Fuente de estilo de videojuego */
+    font-size: 1rem;
+    color: #000; /* Color de texto negro */
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.button1{
+    margin-top: .3125rem;
+    margin-left: .3125rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    display: inline-block;
+    padding: .4375rem .625rem;
+    background-color: #FFA500; /* Color naranja brillante */
+    border: .125rem solid #000; /* Borde negro */
+    font-family: 'Press Start 2P', cursive; /* Fuente de estilo de videojuego */
+    font-size: 1.25rem;
+
+    color: #000; /* Color de texto negro */
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.section2 p{
+    width: 50%;
+}
+.section2 .Button:hover{
+    background-color: #FFD700; /* Cambio de color al pasar el mouse */
+    color: #fff; /* Cambio de color de texto al pasar el mouse */
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+    
+}
+
+
+.main-princ1{
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    background-color: var(--redcolor);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.Menu-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Menu-1 h1{
+    color: var(--whitecolor);
+    font-size: 2rem;
+    font-family: var(--gamefont);
+    padding-bottom: .625rem;
+}
+
+    
+
+.slider{
+    overflow: hidden;
+    width: 43.75rem;
+    border: .1875rem solid white;
+
+}
+.slider_inner{
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 300ms ease-in-out;
+    align-items: center;
+
+
+}
+
+.slider_inner img{
+        aspect-ratio: 16 / 9;
+      width: 100%;
+      object-fit: cover;
+       
+}
+.Ofertas-princ2{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--redcolor);
+}
+.Ofertas-princ2 h1{
+    font-family: var(--gamefont);
+    color: var(--whitecolor);
+    padding-bottom: .625rem;
+}
+.ofertas-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+.ofertas-img img{
+    border-radius: 20px;
+    width: 300px;
+    height:auto;
+    transition: all 300ms ease-in-out;
+}
+.ofertas-img img:hover{
+    transform: scale(1.2);
+}
+
+.whoweare{
+    display: flex;
+    justify-content: center;
+background-color: var(--redcolor);
+
+}
+.whoweare .whoare1{
+    width: 80%;
+    color: var(--whitecolor);
+font-family: var(--gamefont);
+}
+.whoweare{
+    width: 100%;
+    height: -webkit-fill-available;
+    background-color: var(--redcolor);
+    color: var(--whitecolor);
+    
+}
+
+.quienessomos{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 70%;
+}
+
+
+
+.icon-w{
+    width: 60px;
+    height: 60px;
+    position:fixed;
+    bottom: 100px;
+    right: 35px;
+    z-index: 100;
+    transition: 300ms all  ease-in-out;
+}
+.icon-w img{
+    width: 50px;
+    height: 50px;
+}
+.icon-w:hover{
+    transform: scale(1.5);
+}
+.icon-r{
+    width: 50px;
+    height: 50px;
+    position:fixed;
+    bottom: 190px;
+    right: 45px;
+    z-index: 100;
+    background-color: var(--whitecolor);
+    transition: 300ms all  ease-in-out;
+    text-align: center;
+    border-radius: 4px;
+}
+.icon-r img{
+    width: 40px;
+    height: 40px;
+}
+
+.footer-web{
+    width: 100%;
+    height: 500px;
+    background-color: var(--blacklatter);
+    color: var(--whitecolor)la;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    align-content:  center;  
+    gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    *{
+        font-size: 10px;
+    }
+    .fa-solid{
+        display: inline;
+    }
+    .menu-header{
+        /* display: none; */
+        position: absolute;
+        margin-top: 4.375rem;
+        /* background-color: var(--redcolor); */
+        transform: translateX(-100%);
+        flex-direction: column;
+        padding-bottom: 6.25rem;
+        transition: all ease-in 300ms;
+    }
+    .showactive{
+        transform: translateX(0);
+    }
+    .slider{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+
+}
