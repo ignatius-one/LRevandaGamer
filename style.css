@@ -225,6 +225,11 @@ section .section-mein{
     transform: scale(1.1); /* Efecto de escala al pasar el mouse */
     
 }
+.section2 .Button a{
+        text-decoration: none;
+        color: #000;
+        font-family: 'Press Start 2P', cursive;
+}
 
 
 .main-princ1{
@@ -381,10 +386,22 @@ font-family: var(--gamefont);
     align-content:  center;  
     gap: 30px;
 }
-
+.footer-info,.credits{
+    color: var(--whitecolor);
+}
+.footer-info,.credits a{
+    text-decoration: none;
+    color: var(--whitecolor);
+}
+.footer-web-content .ubication{
+    border: 10px solid var(--whitecolor) ;
+}
 @media screen and (max-width: 768px) {
     *{
         font-size: 12px;
+    }
+    .section2 p{
+        display: none;
     }
     .fa-solid{
         display: inline;
