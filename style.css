@@ -294,7 +294,8 @@ section .section-mein{
 .Ofertas-princ2 h1{
     font-family: var(--gamefont);
     color: var(--whitecolor);
-    padding-bottom: .625rem;
+    padding-bottom: 60px;
+    font-size: 2rem;
 }
 .ofertas-img{
     display: flex;
@@ -338,6 +339,7 @@ font-family: var(--gamefont);
     flex-direction: column;
     gap: 1.25rem;
     width: 70%;
+    padding-top: 5.625rem;
 }
 
 
@@ -400,12 +402,19 @@ font-family: var(--gamefont);
     *{
         font-size: 12px;
     }
+
+    .section1 .Title1 {
+        font-size: 1.5rem;
+    }
     .main-principal{
         background-attachment: scroll;
     }
-    .section2 p{
+    /* .section2 p{
         display: none;
-    }
+    } */
+
+
+    
     .fa-solid{
         display: inline;
     }
