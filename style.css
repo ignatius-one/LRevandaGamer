@@ -41,7 +41,45 @@ html {
 body{
     /* cursor: url('media/mano.png'), auto; */
 }
+[title] {
+    position: relative;
+}
 
+/* Estilo del tooltip activado */
+[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: max-content; /* Ajusta el ancho según el contenido */
+}
+
+/* Triángulo para simular la cola del globo de texto */
+[title]:hover:after:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    border-color: #333 transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Mostrar el tooltip */
+[title]:hover:after {
+    opacity: 1;
+}
 .main-principal{
    /* position: relative; */
    padding-top: 5rem;
@@ -231,36 +269,44 @@ section .section-mein{
         font-family: 'Press Start 2P', cursive;
 }
 
-
-.main-princ1{
-    width: 100%;
-    height: 100%;
-    height: 100vh;
-    background-color: var(--redcolor);
+.main-galeria{
+    width:100%;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
     display: flex;
-    align-items: center;
     align-content: center;
-    justify-content: center;
-}
-
-.Menu-1{
-    width: 100%;
-    height: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-
-}
-.Menu-1 h1{
-    color: var(--whitecolor);
-    font-size: 2rem;
-    font-family: var(--gamefont);
-    padding-bottom: .625rem;
-}
-
+    flex-direction: column;
+    background-color: var(--redcolor);
     
+}
+.main-galeria h1{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Press Start 2P', system-ui;
+    color: var(--whitecolor);
+    padding-bottom: 2.5rem;
+}
 
-.slider{
+.photo img{
+    width: 31.25rem;
+    height: 25rem;
+    border: .9375rem solid white;
+    border-top: 1.875rem solid white;
+    border-bottom: 1.875rem solid white;
+}
+.photo1{
+    transform: rotate(349deg);
+}
+.photo2{
+    transform: rotate(-2deg);
+}
+.photo3{
+    transform: rotate(7deg);
+}
+
+
+/* .slider{
     overflow: hidden;
     width: 43.75rem;
     border: .1875rem solid white;
@@ -280,7 +326,9 @@ section .section-mein{
       width: 100%;
       object-fit: cover;
        
-}
+} */
+
+
 .Ofertas-princ2{
     width: 100%;
     padding-top: 100px;
@@ -387,16 +435,29 @@ font-family: var(--gamefont);
     align-items: center;
     align-content:  center;  
     gap: 30px;
+    padding: 12px;
+    color: var(--whitecolor);
+}
+.footer-web-content p{
+    color: var(--whitecolor);
+    padding-bottom: .625rem;
 }
 .footer-info,.credits{
     color: var(--whitecolor);
+}
+.footer-info a{
+    text-decoration: none;
+    color: var(--whitecolor);
+}
+.footer-info i{
+    margin-right: .3125rem;    
 }
 .footer-info,.credits a{
     text-decoration: none;
     color: var(--whitecolor);
 }
 .footer-web-content .ubication{
-    border: 10px solid var(--whitecolor) ;
+    border: .5625rem solid var(--whitecolor) ;
 }
 @media screen and (max-width: 768px) {
     *{
