@@ -474,7 +474,10 @@ font-family: var(--gamefont);
         display: none;
     } */
 
-
+    .photo img{
+        width: 18.75rem;
+        height: 12.5rem;
+        }
     
     .fa-solid{
         display: inline;
