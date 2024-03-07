@@ -459,6 +459,10 @@ font-family: var(--gamefont);
 .footer-web-content .ubication{
     border: .5625rem solid var(--whitecolor) ;
 }
+.footer_comments{
+    background-color: var(--blacklatter);
+    color: var(--whitecolor);
+}
 @media screen and (max-width: 768px) {
     *{
         font-size: 12px;
