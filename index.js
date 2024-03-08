@@ -19,3 +19,12 @@ setInterval(function(){
     index++
 
 }, 1000);
+
+function mostrarImagen(rutaImagen) {
+    document.getElementById('imagenCompleta').src = rutaImagen;
+    document.getElementById('imagenModal').style.display = 'flex';
+}
+
+function cerrarImagen() {
+    document.getElementById('imagenModal').style.display = 'none';
+}

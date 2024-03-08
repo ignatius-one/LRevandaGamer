@@ -277,16 +277,21 @@ section .section-mein{
     display: flex;
     align-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     background-color: var(--redcolor);
     
 }
-.main-galeria h1{
-    font-size: 3rem;
+.galeria_T{
+    
+    font-size: 2rem;
     text-align: center;
+    padding-top: 3.75rem;
     font-family: 'Press Start 2P', system-ui;
     color: var(--whitecolor);
     padding-bottom: 2.5rem;
+    background-color: var(--redcolor);
 }
 
 .photo img{
@@ -296,6 +301,25 @@ section .section-mein{
     border-top: 1.875rem solid white;
     border-bottom: 1.875rem solid white;
 }
+
+#imagenModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+#imagenModal img {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+
 .photo1{
     transform: rotate(349deg);
 }
@@ -465,7 +489,7 @@ font-family: var(--gamefont);
     color: var(--whitecolor);
 }
 .footer_comments p{
-    font-size: 1.875rem;
+    font-size: 2rem;
     padding-bottom: .75rem;
     font-family: 'Press Start 2P';
     display: flex;

@@ -113,17 +113,22 @@
     </div>
     
 
+    <h1 class="galeria_T">Galeria</h1>
+    
     <div class="main-galeria">
-        <h1>Galeria</h1>
         <div class="photo photo1">
-            <img src="media/photo1.webp" alt="" srcset="">
+            <img src="media/photo1.webp" alt="" srcset="" onclick="mostrarImagen('media/photo1.webp')">
         </div>
         <div class="photo photo2">
-            <img src="media/photo2.webp" alt="" srcset="">
+            <img src="media/photo2.webp" alt="" srcset="" onclick="mostrarImagen('media/photo2.webp')">
         </div>
         <div class="photo photo3">
-            <img src="media/photo3.webp" alt="" srcset="">
+            <img src="media/photo3.webp" alt="" srcset="" onclick="mostrarImagen('media/photo3.webp')">
         </div>
+        <!-- Agrega más imágenes según sea necesario -->
+    </div>
+    <div id="imagenModal" onclick="cerrarImagen()">
+        <img id="imagenCompleta" src="" alt="Imagen en pantalla completa">
     </div>
 
 
