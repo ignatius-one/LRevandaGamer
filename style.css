@@ -464,6 +464,14 @@ font-family: var(--gamefont);
     background-color: var(--blacklatter);
     color: var(--whitecolor);
 }
+.footer_comments p{
+    font-size: 1.875rem;
+    padding-bottom: .75rem;
+    font-family: 'Press Start 2P';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media screen and (max-width: 768px) {
     *{
         font-size: 12px;
